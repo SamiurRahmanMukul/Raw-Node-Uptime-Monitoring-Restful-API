@@ -1,0 +1,6 @@
+            [//] PROJECT INSTRUCTION GUIDE FILE [//]
+                 RAW NODE RESTFull API DEVELOPE
+            ----------------------------------------
+    
+    *** _ __ _:
+    #1. 

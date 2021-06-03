@@ -1,0 +1,14 @@
+            [//] [PROJECT WORKFLOW | RAW NODE.JS PROJECT [//]
+                            Uptime Monitoring API
+            -------------------------------------------------
+    
+    *** PROJECT WORK-FLOW (RESTFull API):
+    #1: Star the API Server
+    #2: Create, Edit, Delete User
+    #3: Token based authentication
+    #4: Logout Mechanism
+    #5: Set links & Up/Down status
+    #6: Edit/Delete/ links & rate limit
+    #7: Check Up/Down time
+
+            [//] HAPPY PROGRAMMING & DEVELOPING [//]

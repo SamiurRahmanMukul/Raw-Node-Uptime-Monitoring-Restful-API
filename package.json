@@ -7,7 +7,8 @@
   "author": "Md. Samiur Rahman Mukul <sr.mukul9090@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified \" & exit 1"
   },
   "devDependencies": {
     "eslint": "7.2.0",
