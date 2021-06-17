@@ -2,11 +2,11 @@
  * Title: Handle Request / Response
  * Description: Handling Request and Response
  * Author: Md. Samiur Rahman (Mukul)
- * Date: 3 July 2021
+ * Date: 3 July 2021 & 17 July 2021 (remodify)
  *
  */
 
-// * dependence
+// * dependencies
 const url = require("url");
 const { StringDecoder } = require("string_decoder");
 const routes = require("./../routes");
@@ -17,7 +17,6 @@ const {
 // * module scaffolding
 const handler = {};
 
-// * handle Request / Responses
 handler.handleReqRes = (req, res) => {
   // request handling
   // get the url and parse it
@@ -28,23 +27,32 @@ handler.handleReqRes = (req, res) => {
   const queryStringObject = parsedUrl.query;
   const headersObject = req.headers;
 
-  /* handling routes - start */
   const requestProperties = {
     parsedUrl,
     path,
     trimmedPath,
+    method,
     queryStringObject,
     headersObject,
   };
 
+  const decoder = new StringDecoder("utf-8");
+  let realData = "";
+
   const chosenHandler = routes[trimmedPath]
     ? routes[trimmedPath]
     : notFoundHandler;
-  /* handling routes - end */
 
-  /* body post data find with enconding format - start */
-  const decoder = new StringDecoder("utf-8");
-  let realData = "";
+  chosenHandler(requestProperties, (statusCode, payload) => {
+    statusCode = typeof statusCode === "number" ? statusCode : 500;
+    payload = typeof payload === "object" ? payload : {};
+
+    const payloadString = JSON.stringify(payload);
+
+    // return the final response
+    res.writeHead(statusCode);
+    res.end(payloadString);
+  });
 
   req.on("data", (buffer) => {
     realData += decoder.write(buffer);
@@ -53,21 +61,10 @@ handler.handleReqRes = (req, res) => {
   req.on("end", () => {
     realData += decoder.end();
 
-    chosenHandler(requestProperties, (statusCode, payload) => {
-      statusCode = typeof statusCode === "number" ? statusCode : 500;
-      payload = typeof payload === "object" ? payload : {};
-
-      const payloadString = JSON.stringify(payload);
-
-      // return the final response
-      res.writeHead(statusCode);
-      res.end(payloadString);
-    });
-
+    console.log(realData);
     // response handle
-    res.end("Hello World!");
+    res.end("Hello world");
   });
-  /* body post data find enconding format - end */
 };
 
 module.exports = handler;
