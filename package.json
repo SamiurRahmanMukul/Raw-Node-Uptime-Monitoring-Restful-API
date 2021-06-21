@@ -17,5 +17,9 @@
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "twilio-api": "^0.3.3"
   }
 }
