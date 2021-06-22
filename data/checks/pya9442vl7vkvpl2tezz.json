@@ -1,0 +1,9 @@
+{
+  "id": "pya9442vl7vkvpl2tezz",
+  "userPhone": "01811111111",
+  "protocol": "http",
+  "url": "www.google.com",
+  "method": "GET",
+  "successCodes": [200, 201],
+  "timeoutSeconds": 2
+}
