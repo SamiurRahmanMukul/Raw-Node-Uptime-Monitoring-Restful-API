@@ -5,5 +5,7 @@
   "url": "www.google.com",
   "method": "GET",
   "successCodes": [200, 201],
-  "timeoutSeconds": 2
+  "timeoutSeconds": 2,
+  "state": "down",
+  "lastChecked": 1624330707545
 }
