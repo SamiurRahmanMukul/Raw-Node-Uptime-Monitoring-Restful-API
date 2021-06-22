@@ -1,1 +1,7 @@
-{"firstName":"Samiur Rahman","lastName":"Mukul","phone":"01611111111","password":"c782bcf63866154340e44feb0041047154e31ea3b601143fc3b9c821de6be963","tosAgreement":true}
+{
+  "firstName": "Samiur Rahman",
+  "lastName": "Mukul",
+  "phone": "01611111111",
+  "password": "c782bcf63866154340e44feb0041047154e31ea3b601143fc3b9c821de6be963",
+  "tosAgreement": true
+}
