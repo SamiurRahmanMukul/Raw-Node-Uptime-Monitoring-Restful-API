@@ -10,6 +10,12 @@
 const http = require("http");
 const { handleReqRes } = require("./helpers/handleReqRes");
 
+/* // ? twilio sms api using send message
+const { sendTwilioSms } = require("./helpers/notifications");
+sendTwilioSms("01611111111", "Hello World", (err) => {
+  console.log(`this is the error: `, err);
+}); */
+
 // * app object - module scaffolding
 const app = {};
 
