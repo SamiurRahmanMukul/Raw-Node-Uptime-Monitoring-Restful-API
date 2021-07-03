@@ -1,8 +1,15 @@
             [//] [PROJECT WORKFLOW | RAW NODE.JS PROJECT [//]
                             Uptime Monitoring API
             -------------------------------------------------
+    *** PROJECT `CONTENT-OF-GLANCE` (Uptime URL Monitoring API)
+    $1: RESTfullAPI
+    $2: Authentication & Authorization
+    $3: User Singup & Add/Edit Settings
+    $4: SMS Notification using Twilio API
+    $5: RAW Node.js & no npm modules using
     
-    *** PROJECT WORK-FLOW (RESTFull API):
+    *** PROJECT `WORK-FLOW` (RESTFull API | Uptime Monitoring):
+		==> PART-1 <==
     #1: Star the API Server
     #2: Create, Edit, Delete User
     #3: Token based authentication
@@ -10,5 +17,20 @@
     #5: Set links & Up/Down status
     #6: Edit/Delete/ links & rate limit
     #7: Check Up/Down time
+
+		==> PART-2 <==
+    #8: Using Environment Variables
+    #9: Data Storage in File System
+    #10: CRUD System with fs-module
+
+		==> PART-3 <==
+    #11: Using HTTPS to send Request
+    #12: Connect to Twilio API
+    #13: Send SMS using Twilio API
+
+		==> PART-4 <==
+    #14: Code Refactoring
+    #15: Create Background Workers
+    #16: Run Background Workers in loop
 
                 [//] HAPPY PROGRAMMING & DEVELOPING [//]

@@ -37,7 +37,16 @@ yarn install
 yarn start
 ```
 
-Application should be available at `http://localhost:3000`
+- 4. Application should be available at `http://localhost:3000`
+
+- 5. This project (uptime monitoring RESTfullAPI) routes
+
+```sh
+http://localhost:3000/sample
+http://localhost:3000/user
+http://localhost:3000/token
+http://localhost:3000/check
+```
 
 <!-- my social media links -->
 
